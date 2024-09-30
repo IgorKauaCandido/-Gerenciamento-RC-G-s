@@ -1,0 +1,68 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(6, 176, 182); /* Fundo cinza na página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da janela */
+}
+
+/* Estilização do nome RC Gás */
+h1 {
+    color: rgb(250, 246, 17); /* Cor amarela para o nome RC Gás */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Centralização e box transparente do formulário de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombras para o box */
+    text-align: center;
+    width: 300px;
+    animation: showLogin 1s ease-in-out; /* Animação ao mostrar o login */
+}
+
+/* Campos de entrada no formulário */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d0f308; /* Cor do botão */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e60013; /* Cor ao passar o mouse */
+}
+
+/* Animação ao mostrar o login */
+@keyframes showLogin {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
